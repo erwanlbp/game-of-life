@@ -5,4 +5,4 @@ type view interface {
 	AddCell() (int, int)
 }
 
-var View view = Console{}
+var View view = &Gui{}

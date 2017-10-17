@@ -1,2 +1,3 @@
-package: github.com/erwanlbp/gameOfLife
-import: []
+package: github.com/erwanlbp/game-of-life
+import:
+- package: github.com/andlabs/ui
