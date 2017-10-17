@@ -1,8 +1,6 @@
 package data
 
-import (
-	"github.com/erwanlbp/gameOfLife/view"
-)
+import "github.com/erwanlbp/game-of-life/view"
 
 type Grid [][]bool
 

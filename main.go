@@ -2,12 +2,11 @@ package main
 
 import (
 	"flag"
-
 	"fmt"
+	"math/rand"
 	"time"
 
-	"github.com/erwanlbp/gameOfLife/data"
-	"math/rand"
+	"github.com/erwanlbp/game-of-life/data"
 )
 
 var nbLig, nbCol int
@@ -38,10 +37,10 @@ func main() {
 	for i := 0; ; i++ {
 		grid.Iterate()
 		grid.Print()
-		fmt.Print("Gen.",i)
+		fmt.Print("Gen.", i)
 		time.Sleep(time.Millisecond * 200)
 	}
 
 	elapsed := time.Since(start)
-	fmt.Println("END : ",elapsed)
+	fmt.Println("END : ", elapsed)
 }
